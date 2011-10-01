@@ -1,0 +1,82 @@
+\documentclass{resume}
+
+\usepackage{amssymb}
+\usepackage{url}
+
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1.1in}
+\setlength{\marginparwidth}{1.1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+%
+%
+\setlength{\topmargin}{-0.5in}
+%
+%
+\renewcommand{\labelcitem}{$\rhd$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+\author{~~~~~~Rajan}
+% ------ Address --------------------------------------------------------
+
+\address{
+	 \mbox{\small\tt }
+        }{
+	 \mbox{\small\tt }}
+
+\begin{document}
+\maketitle
+
+% ------- Education ---------------------------------------------------
+
+\begin{category}{Education}
+\citem{},
+\citem{},
+\citem{},
+\end{category}
+
+% --------- Research ----------------------------------------------------
+
+\begin{category}{Research interests}
+\citemnobullet 
+\end{category}
+
+\begin{category}{Skills}
+\citemnobullet 
+
+\end{category}
+
+\begin{category}{Work Experience}
+\citem{},
+\footnote{\url{},} 
+\citem{}
+\citem{} 
+
+\end{category}
+
+% -------- Reference --------------------------------------------
+
+\begin{category}{} 
+\citemnobullet
+\end{category}
+
+\end{document}
